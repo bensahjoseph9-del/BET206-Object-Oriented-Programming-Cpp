@@ -1,0 +1,19 @@
+START
+
+DECLARE a, b AS INTEGER
+DECLARE s, D, m, q AS INTEGER
+
+INPUT a
+INPUT b
+
+s ← a + b
+D ← a - b
+m ← a * b
+q ← a / b
+
+DISPLAY "Sum = ", s
+DISPLAY "Difference = ", D
+DISPLAY "Product = ", m
+DISPLAY "Quotient = ", q
+
+END
