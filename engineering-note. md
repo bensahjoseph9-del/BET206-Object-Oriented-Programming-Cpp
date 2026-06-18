@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Initialize variables to prevent garbage values
+    int a = 0;
+    int b = 0;
+
+    // Prompt user for input
+    cout << "Enter two integers separated by a space: ";
+    if (!(cin >> a >> b)) {
+        cerr << "Error: Invalid input. Please enter integers only." << endl;
+        return 1; 
+    }
+
+    // Perform operations and display results safely
+    cout << "Sum = " << a + b << "\n";
+    cout << "Difference = " << a - b << "\n";
+    cout << "Product = " << a * b << "\n";
+
+    // Prevent runtime crash caused by division by zero
+    if (b == 0) {
+        cout << "Quotient = Undefined (Cannot divide by zero)\n";
+    } else {
+        cout << "Quotient = " << a / b << "\n";
+    }
+
+    return 0;
+}
