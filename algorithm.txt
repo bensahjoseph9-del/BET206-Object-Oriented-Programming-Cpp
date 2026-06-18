@@ -1,0 +1,16 @@
+Algorithm: Arithmetic Operations
+
+1. Start
+2. Declare variables a, b, s, D, m, and q as integers.
+3. Input values for a and b.
+4. Calculate:
+      s = a + b
+      D = a - b
+      m = a * b
+      q = a / b
+5. Display:
+      Sum = s
+      Difference = D
+      Product = m
+      Quotient = q
+6. Stop
