@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float power, total=0;
+
+    for(int i=1; i<=10; i++)
+    {
+        cout<<"Enter power reading (W): ";
+        cin>>power;
+
+        if(power < 0)
+        {
+            cout<<"Invalid reading skipped.\n";
+            continue;
+        }
+
+        total += power;
+    }
+
+    cout<<"Total Valid Power = "<<total<<" W";
+
+    return 0;
+}
